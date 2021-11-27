@@ -1,0 +1,468 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow&family=Fraunces:wght@700&family=Raleway:wght@700&display=swap');
+* {
+	box-sizing: border-box;
+}
+
+html {
+	height: 100%;
+}
+
+body {
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	margin: 0;
+	padding: 0;
+	font-family: 'Fraunces', sans-serif;
+	background-color: #f2f2f2;
+}
+
+img {
+	vertical-align: middle;
+	object-fit: cover;
+}
+
+.container {
+	width: 1320px;
+	margin: 0 auto;
+	padding: 0 20px;
+}
+
+.container--small {
+	width: 1240px;
+}
+
+/* Header  */
+
+.header .container {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 44px 20px;
+}
+
+/* Nav  */
+
+.nav__list {
+	display: flex;
+	align-items: center;
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+
+.nav__item + .nav__item {
+	margin-left: 33px;
+}
+
+.nav__link {
+	color: #83888f;
+	text-decoration: none;
+    font-family: Barlow;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 15px;
+    letter-spacing: 0.923077px;
+    text-transform: uppercase;
+    transition: color 0.2s ease;
+    color: #83888F;
+}
+
+.nav__link:hover {
+	color: #333d4b;
+}
+
+.nav__link--active {
+	color: #333d4b;
+}
+
+/* Main  */
+.main {
+	flex-grow: 1;
+}
+
+/* Hero  */
+
+.hero-inner{
+    width: 1280px;
+    padding: 115px 85px;
+    background: #A2A2A2;
+    margin-bottom: 150px;
+    border-radius: 10px;
+}
+
+.hero__heading {
+	width: 493px;
+	margin-top: 0;
+	margin-bottom: 32px;
+	font-weight: 900;
+	font-size: 72px;
+	line-height: 72px;
+	color: #fefcf7;
+}
+
+.hero__description {
+	width: 445px;
+	margin-top: 0;
+	margin-bottom: 56px;
+    font-family: Barlow;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 26px;
+    color: #FEFCF7;
+    mix-blend-mode: normal;
+    opacity: 0.8;
+}
+
+/* Button   */
+.button {
+	display: inline-block;
+	width: 217px;
+	padding: 15px;
+	font-weight: 900;
+	font-size: 18px;
+	line-height: 25px;
+	text-align: center;
+	color: #fefcf7;
+	text-decoration: none;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	background-color: #0e8784;
+	border: none;
+	border-radius: 6px;
+	cursor: pointer;
+	transition: background-color 0.2s ease;
+}
+
+.button:hover {
+	background-color: #66d2cf;
+}
+
+.button:disabled {
+	background-color: #e2dedb;
+}
+
+/* main-collection */
+
+.collection .container{
+    background-image: url(../image/Group\ 13.png);
+    background-repeat: no-repeat;
+    background-size: 1111px;
+    background-position-y: inherit;
+    background-position-x: center;
+    margin-bottom: 200px;
+}
+
+.collection-inner{
+    width: 1111px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding-top: 100px;
+}
+
+.collection .card{
+    padding-top: 275px;
+}
+.collection .card {
+	width: 255px;
+	padding: 20px;
+}
+
+.collection .card__image {
+	vertical-align: middle;
+	object-fit: cover;
+	margin-bottom: 20px;
+}
+
+.collection .card__title {
+    text-align: center;
+    margin-top: 0;
+	margin-bottom: 20px;
+    font-family: Fraunces 9pt;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 32px;
+    color: #333D4B;
+}
+
+.collection .card__paragraph {
+    text-align: center;
+    margin-top: 0;
+	margin-bottom: 20px;
+    font-family: Barlow;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 26px;
+    color: #333D4B;
+}
+
+.collection .card__link {
+	width: 100%;
+	display: block;
+	padding: 8px;
+	color: white;
+	text-decoration: none;
+	text-align: center;
+	background-color: dimgray;
+	border-radius: 3px;
+}
+
+/* hero-advantages */
+
+
+.advantages-inner{
+    width: 1280px;
+    position: relative;
+    margin-bottom: 350px;
+    padding: 100px;
+    padding-bottom: 317px;
+    background-color: #2C343E;
+    border-radius: 10px;
+    color: #83888F;
+}
+
+.advantages__title{
+    text-align: center;
+    margin: 0;
+    margin-bottom: 32px;
+    font-family: Fraunces;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 40px;
+    line-height: 48px;
+    color: #FEFCF7;
+}
+
+.advantages__paragraph{
+    width: 540px;
+    text-align: center;
+    margin: 0 auto;
+	margin-top: 0;
+	margin-bottom: 20px;
+    font-family: Barlow;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 26px;
+    color: #FEFCF7;
+    mix-blend-mode: normal;
+    opacity: 0.8;
+}
+
+.advantages-cards{
+    position: absolute;
+    width: 1110px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+.advantages__card{
+	position: relative;
+    top: 85px;
+	width: 350px;
+    padding:72px 48px;
+    padding-bottom: 48px;
+    background: #0E8784;
+    border-radius: 8px;
+}
+
+.advantages__card__image {
+    display: block;
+	object-fit: cover;
+    margin: 0 auto;
+	margin-bottom: 56px;
+}
+
+.advantages__card__title {
+    text-align: center;
+    margin-top: 0;
+	margin-bottom: 20px;
+    font-family: Fraunces 9pt;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 32px;
+    color: #FEFCF7;
+}
+
+.advantages__card__paragraph {
+    text-align: center;
+    font-family: Barlow;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 26px;
+    color: #FEFCF7;
+}
+
+
+/* Main-bottom */
+
+.main-bottom{
+    width: 1280px;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.main-bottom .container{
+    width: 1045px;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.main-bottom-title{
+    margin: 0;
+    margin-bottom: 80px;
+    font-family: Fraunces 9pt;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 32px;
+    color: #83888F;
+}
+
+.main-bottom-line {
+    position: relative;
+    display:flex;
+    width: 760px;
+    height: 2px;
+    background-color: #FDD6BA;
+    margin-left: 15.5px;
+    margin-bottom: 67px;
+}
+  
+.main-bottom-circle {
+    position: absolute;
+    top: calc(50% - 15.5px);
+    left: calc(50% - 15.5px);
+    width: 31px;
+    height: 31px;
+    background: #FEFCF7;
+    border: 2px solid #0E8784;
+    box-sizing: border-box;
+    border-radius: 50%;
+  }
+  
+.main-bottom-circle::after {
+    content: "";
+    position: absolute;
+    top: calc(50% - 15.5px);
+    left: 380px;
+    width: 31px;
+    height: 31px;
+    background: #FEFCF7;
+    border: 2px solid #0E8784;
+    box-sizing: border-box;
+    border-radius: 50%;
+  }
+  
+.main-bottom-circle::before {
+    content: "";
+    position: absolute;
+    z-index: 100;
+    top: calc(50% - 15.5px);
+    right: 380px;
+    width: 31px;
+    height: 31px;
+    background: #FEFCF7;
+    border: 2px solid #0E8784;
+    box-sizing: border-box;
+    border-radius: 50%;
+  }
+
+
+.performance{
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 64px;
+}
+
+.performance__list {
+	display: flex;
+    justify-content: space-between;
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+
+.performance__item{
+    width: 285px;
+}
+
+.performance__card__image{
+    margin-bottom: 38px;
+}
+.performance__card__title{
+    width: 255px;
+    margin: 0;
+    margin-bottom: 42px;
+    font-family: Fraunces 9pt;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 32px;
+    line-height: 36px;
+    color: #333D4B;
+}
+
+.performance__card__paragraph{
+    margin: 0;
+    font-family: Barlow;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 26px;
+    color: #333D4B;
+}
+
+
+.main-bottom .button{
+    margin-bottom: 200px;
+}
+
+
+
+/* Footer  */
+
+.footer__inner {
+	display: flex;
+	align-items: center;
+	padding: 47px 20px;
+	background-color: #2c343e;
+}
+
+.footer .logo-link {
+	margin-right: 103px;
+}
+
+.footer .nav__link:hover {
+	color: #fefcf7;
+}
+
+.socials {
+	display: flex;
+	align-items: center;
+	margin: 0;
+	margin-left: auto;
+	padding: 0;
+	list-style-type: none;
+}
+
+.socials__item + .socials__item {
+	margin-left: 24px;
+}
+
+.socials__link {
+	text-decoration: none;
+}
+
+.socials__link img:hover{
+    transition: opacity 0.2s ease;
+    opacity: 0.5;
+}
